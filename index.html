@@ -8,6 +8,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <style>
+     @media(min-width:981px){
+  .hero {
+    min-height: 100vh; /* full viewport height */
+    display: grid;
+    place-items: center; /* centers entire hero vertically */
+    grid-template-columns: minmax(0,1fr) 420px;
+    gap:36px;
+    padding:0 36px; /* keep horizontal padding only */
+  }
+}
     :root{
       --bg:#0b0c0d;
       --panel:#111215;
@@ -62,75 +72,38 @@
     <section class="hero">
       <div>
         <div class="eyebrow">For creators using • Skool • Whop • Gumroad • Cosmofeed • etc.</div>
-        <h2>Funnels that make your Skool, Whop, Cosmofeed or Gumroad offers actually convert.</h2>
-        <p class="lead">Stop sending cold traffic straight to checkout pages that don’t sell. I build branded, high-conversion landing pages that pre-sell your offer and push warm buyers to your checkout — without changing your current platform.</p>
+        <h2>High-conversion landing pages built for you</h2>
+       <p class="lead">
+If you're sending people straight to your <b>selling platforms</b>, you're already
+<b>losing sales</b>. Those pages don’t warm anyone up — no story, no value, no trust —
+so people scroll, hesitate, and bounce.  
+<br><br>
+A landing page placed <b>right before</b> your checkout changes everything. It builds
+context, shows proof, answers objections, and makes your offer feel real — which
+dramatically increases the chances they actually buy.  
+<br><br>
+I build clean, branded landing pages that warm visitors up, explain <b>your offer
+fast</b>, and get more of them to <b>buy</b> — without you changing anything in your
+<b>current setup</b>.
+</p> <br>
         <div class="features">
-          <div class="feature">Platform native redirects (Skool / Whop / Gumroad / Cosmofeed)</div>
-          <div class="feature">Conversion-first copy & design</div>
-          <div class="feature">Analytics & A/B suggestions</div>
-          <div class="feature">Fast delivery — simple edits</div>
-        </div>
+         <b> <div class="feature">High-trust sections (proof, clarity, offer breakdown)</div><br>
+          <div class="feature">Design that converts</div><br>
+          <div class="feature">Pre-sell, not pray</div> <br>
+          <div class="feature">Traffic --> Buyers</div>
+        </div></b>
 
         <div style="margin-top:20px" class="cta-row">
-          <a class="btn" href="mailto:ayushthakurmain@gmail.com?subject=Free Funnel Audit Request&body=Hey Ayush, I’d like a free funnel audit for my page:">Get a Free Funnel Audit</a>
+          <a class="btn" href="mailto:ayushthakurmain@gmail.com?subject=Free Funnel Audit Request&body=Hey Ayush, I’d like a free funnel audit for my page:">Get Your Landing Page</a>
           <a href="#cases" class="btn ghost">View work</a>
         </div>
 
-        <div style="margin-top:22px;color:var(--muted);font-size:13px">
-          <span class="kbd">&nbsp Min project ₹5k ($56)</span>
-          <br><span style="margin-left:12px"><b>Average client spends:</b> ₹15k($169)–₹30k($338)</span>
-        </div>
-      </div>
-
-      <aside>
-        <div class="cta-card">
-          <div style="display:flex;justify-content:space-between;align-items:center">
-            <div>
-              <div class="small">Popular package</div>
-              <div class="price">Growth Funnel — ₹5,000 ($56)</div>
-            </div>
-            <div class="badge">Done-for-you</div>
-          </div>
-
-          <div class="divider"></div>
-
-          <div class="pkg"><div>1-page pre-sale funnel</div><div class="small">Live link</div></div>
-          <div class="pkg"><div>Copy & micro-conversion design</div><div class="small">CTA → Platform</div></div>
-          <div class="pkg"><div>Analytics & setup</div><div class="small">Tag + enable tracking</div></div>
-
-          <div style="margin-top:12px">Want a sample preview of your funnel? Click below and I’ll send a 60s video review with suggestions.</div>
-          <div style="margin-top:12px;display:flex;gap:10px">
-            <a class="btn" href="mailto:ayushthakurmain@gmail.com?subject=Funnel Audit Request&body=Hey Ayush, I’d like a 60s funnel audit video for my current page:">Request Audit</a>
-            <a class="btn ghost" href="#cases">See Case Studies</a>
-          </div>
-        </div>
+        
       </aside>
     </section>
-
-    <section id="work">
-      <h3>What I build</h3>
-      <p class="muted">Branded landing pages and micro-funnels that integrate with Skool, Whop, Gumroad, Cosmofeed, Stripe checkout links, and other creator platforms.
-      <br>
-      Which will increase potential client trust for sure, and hence sales.</p>
-
-      <div class="grid" style="margin-top:14px">
-        <div class="panel">
-          <h4>Pre-sale Funnels</h4>
-          <p class="muted">Single page funnels that pre-frame your offer, remove objections, and route buyers to your existing checkout (Skool/Whop/Gumroad).</p>
-        </div>
-        <div class="panel">
-          <h4>Multi-section Funnels</h4>
-          <p class="muted">2–3 section pages: hero, social proof, offer breakdown, FAQs, final CTA — perfect for higher-priced courses.</p>
-        </div>
-        <div class="panel">
-          <h4>Audit & Optimization</h4>
-          <p class="muted">Quick audits with immediate changes you can implement, plus analytics setup and suggested A/B tests.</p>
-        </div>
-      </div>
-    </section>
-
+   
    <section id="cases">
-      <h3 style="text-align:center">Case Studies</h3>
+      <h1 style="text-align:center">Case Studies</h1>
       <p class="lead" style="text-align:center">Real examples from creators using Skool, Whop, Gumroad, Cosmofeed and more.</p>
 
       <div class="case-grid">
@@ -176,18 +149,20 @@
     <section style="margin-top:28px">
       <div class="panel">
         <h3>How it works — 3 steps</h3>
-        <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
-          <div style="flex:1;min-width:180px">
-            <strong>1. Audit</strong>
-            <div class="muted">Send your current link — I’ll record a 60s video audit with 3 quick wins.</div>
-          </div>
-          <div style="flex:1;min-width:180px">
-            <strong>2. Build</strong>
-            <div class="muted">I design & deliver your funnel. You get a live link to test and share.</div>
-          </div>
-          <div style="flex:1;min-width:180px">
-            <strong>3. Optimize</strong>
-            <div class="muted">Analytics setup & 2 suggested A/B tests to level up conversions.</div>
+<div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
+  <div style="flex:1;min-width:180px">
+    <strong>1. Contact</strong>
+    <div class="muted">You reach out, we discuss what you need, and lock in the direction.</div>
+  </div>
+  <div style="flex:1;min-width:180px">
+    <strong>2. Build</strong>
+    <div class="muted">I design and build the full landing page. You get a live link to review and test.</div>
+  </div>
+  <div style="flex:1;min-width:180px">
+    <strong>3. Optimize</strong>
+    <div class="muted">You share feedback, I fine-tune everything — and your funnel is ready to go.</div>
+  </div>
+</div>
           </div>
         </div>
       </div>
@@ -196,9 +171,9 @@
     <section style="margin-top:28px">
       <div class="panel">
         <h3>Ready to start?</h3>
-        <p class="muted">Request a free funnel audit — I’ll send a short Loom-style video with 3 specific improvements you can make this week.</p>
+        <p class="muted">This can seriously increase your sales. Increase your revenue by clicking the button below.</p>
         <div style="margin-top:12px">
-          <a class="btn" href="mailto:ayushthakurmain@gmail.com?subject=Free Funnel Audit&body=Hey Ayush, I’d like a free funnel audit for my link:">Request Free Audit</a>
+          <a class="btn" href="mailto:ayushthakurmain@gmail.com?subject=Free Funnel Audit&body=Hey Ayush, I want a landing page:">Contact Now</a>
         </div>
       </div>
     </section>
