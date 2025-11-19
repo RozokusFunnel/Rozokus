@@ -1,243 +1,296 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Rozokus — Skool / Whop / Gumroad Funnels</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <style>
-     @media(min-width:981px){
-  .hero {
-    min-height: 100vh; /* full viewport height */
-    display: grid;
-    place-items: center; /* centers entire hero vertically */
-    grid-template-columns: minmax(0,1fr) 420px;
-    gap:36px;
-    padding:0 36px; /* keep horizontal padding only */
-  }
-}
-    :root{
-      --bg:#0b0c0d;
-      --panel:#111215;
-      --muted:#9aa0a6;
-      --accent:#7c5cff;
-      --glass: rgba(255,255,255,0.03);
-      --glass-2: rgba(255,255,255,0.02);
-      --card:#0f1112;
-      --success:#3bd671;
-      --danger:#ff6b6b;
-      --max-width:1100px;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#070708);color:#e6e7e9;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}
-    a{color:inherit;text-decoration:none}
-    .container{max-width:var(--max-width);margin:0 auto;padding:36px}
-    header{padding:18px 0;position:sticky;top:0;backdrop-filter:blur(6px);z-index:30}
-    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;border:0;font-weight:600;cursor:pointer;display:inline-block}
-    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
-    .hero{display:grid;grid-template-columns:1fr 420px;gap:36px;align-items:center;padding:40px 0}
-    .eyebrow{color:var(--muted);font-size:13px;margin-bottom:10px}
-    h2{font-size:36px;line-height:1.03;margin:0 0 16px}
-    p.lead{color:var(--muted);margin:0 0 20px}
-    .features{display:flex;gap:12px;flex-wrap:wrap}
-    .feature{background:var(--glass);padding:8px 12px;border-radius:10px;color:var(--muted);font-size:13px}
-    .cta-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:18px;border:1px solid rgba(255,255,255,0.03)}
-    .price{font-weight:700;font-size:20px}
-    .pkg{display:flex;justify-content:space-between;align-items:center;margin:10px 0;padding:10px;border-radius:10px;background:var(--glass-2)}
-    .small{font-size:13px;color:var(--muted)}
-    section{padding:28px 0}
-    .panel{background:var(--panel);border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,0.03)}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:16px}
-    .case{padding:16px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.015), transparent);border:1px solid rgba(255,255,255,0.03)}
-    .metrics{display:flex;gap:12px;margin-top:12px}
-    .metric{background:var(--glass);padding:8px 10px;border-radius:8px;font-weight:700}
-    footer{padding:36px 0;color:var(--muted)}
-    @media(max-width:980px){
-      .hero{grid-template-columns:1fr;}
-      .case-grid{grid-template-columns:1fr}
-      .grid{grid-template-columns:1fr}
-    }
-    .muted{color:var(--muted)}
-    .kbd{padding:6px 8px;border-radius:8px;background:rgba(0,0,0,0.4);font-weight:700}
-    .badge{display:inline-block;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.03);font-weight:600}
-    .cta-row{display:flex;gap:12px;align-items:center}
-    .divider{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.03),transparent);margin:18px 0}
-  </style>
-</head>
-<body>
-  <main class="container">
-    <section class="hero">
-      <div>
-        <div class="eyebrow">For creators using • Skool • Whop • Gumroad • Cosmofeed • Calendly • etc.</div>
-        <h2>High-conversion landing pages built for you</h2>
-       <p class="lead">
-If you're sending people straight to your <b>selling platforms</b>, you're already
-<b>losing sales</b>. Those pages don’t warm anyone up — no story, no value, no trust —
-so people scroll, hesitate, and bounce.  
-<br><br>
-A landing page placed <b>right before</b> your checkout changes everything. It builds
-context, shows proof, answers objections, and makes your offer feel real — which
-dramatically increases the chances they actually buy.  
-<br><br>
-I build clean, branded landing pages that warm visitors up, explain <b>your offer
-fast</b>, and get more of them to <b>buy</b> — without you changing anything in your
-<b>current setup</b>.
-</p> <br>
-        <div class="features">
-         <b> <div class="feature">High-trust sections (proof, clarity, offer breakdown)</div><br>
-          <div class="feature">Design that converts</div><br>
-          <div class="feature">Pre-sell, not pray</div> <br>
-          <div class="feature">Traffic --> Buyers</div>
-        </div></b>
 
-        <div style="margin-top:20px" class="cta-row">
-          <a class="btn" href="mailto:ayushthakurmain@gmail.com?subject=Free Funnel Audit Request&body=Hey Ayush, I’d like a free funnel audit for my page:">Get Your Landing Page</a>
-          <a href="#cases" class="btn ghost">View work</a>
-        </div>
+<html lang="en">  
+<head>  
+  <meta charset="utf-8" />  
+  <meta name="viewport" content="width=device-width,initial-scale=1" />  
+  <title>Rozokus — Skool / Whop / Gumroad Funnels</title>  
+  <link rel="preconnect" href="https://fonts.googleapis.com">  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">  
+  <style>  
+     @media(min-width:981px){  
+  .hero {  
+    min-height: 100vh; /* full viewport height */  
+    display: grid;  
+    place-items: center; /* centers entire hero vertically */  
+    grid-template-columns: minmax(0,1fr) 420px;  
+    gap:36px;  
+    padding:0 36px; /* keep horizontal padding only */  
+  }  
+}  
+    :root{  
+      --bg:#0b0c0d;  
+      --panel:#111215;  
+      --muted:#9aa0a6;  
+      --accent:#7c5cff;  
+      --glass: rgba(255,255,255,0.03);  
+      --glass-2: rgba(255,255,255,0.02);  
+      --card:#0f1112;  
+      --success:#3bd671;  
+      --danger:#ff6b6b;  
+      --max-width:1100px;  
+    }  
+    *{box-sizing:border-box}  
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#070708);color:#e6e7e9;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}  
+    a{color:inherit;text-decoration:none}  
+    .container{max-width:var(--max-width);margin:0 auto;padding:36px}  
+    header{padding:18px 0;position:sticky;top:0;backdrop-filter:blur(6px);z-index:30}  
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;border:0;font-weight:600;cursor:pointer;display:inline-block}  
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}  
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:36px;align-items:center;padding:40px 0}  
+    .eyebrow{color:var(--muted);font-size:13px;margin-bottom:10px}  
+    h2{font-size:36px;line-height:1.03;margin:0 0 16px}  
+    p.lead{color:var(--muted);margin:0 0 20px}  
+    .features{display:flex;gap:12px;flex-wrap:wrap}  
+    .feature{background:var(--glass);padding:8px 12px;border-radius:10px;color:var(--muted);font-size:13px}  
+    .cta-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:18px;border:1px solid rgba(255,255,255,0.03)}  
+    .price{font-weight:700;font-size:20px}  
+    .pkg{display:flex;justify-content:space-between;align-items:center;margin:10px 0;padding:10px;border-radius:10px;background:var(--glass-2)}  
+    .small{font-size:13px;color:var(--muted)}  
+    section{padding:28px 0}  
+    .panel{background:var(--panel);border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,0.03)}  
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}  
+    .case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:16px}  
+    .case{padding:16px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.015), transparent);border:1px solid rgba(255,255,255,0.03); display: block;} /* Added display block to anchor */ 
+    .metrics{display:flex;gap:12px;margin-top:12px}  
+    .metric{background:var(--glass);padding:8px 10px;border-radius:8px;font-weight:700}  
+    footer{padding:36px 0;color:var(--muted)}  
+    @media(max-width:980px){  
+      .hero{grid-template-columns:1fr;}  
+      .case-grid{grid-template-columns:1fr}  
+      .grid{grid-template-columns:1fr}  
+    }  
+    .muted{color:var(--muted)}  
+    .kbd{padding:6px 8px;border-radius:8px;background:rgba(0,0,0,0.4);font-weight:700}  
+    .badge{display:inline-block;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.03);font-weight:600}  
+    .cta-row{display:flex;gap:12px;align-items:center}  
+    .divider{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.03),transparent);margin:18px 0}  
 
-        
-      </aside>
-    </section>
-   
-   <section id="cases">       
-      <h1 style="text-align:center">Case Studies</h1>
-      <p class="lead" style="text-align:center">Real examples from creators using Skool, Whop, Gumroad, Cosmofeed, Calendly and more.</p>
+    /* NEW STYLES FOR CASE STUDIES */
+    .hl-before { color: var(--danger); font-weight: 700; }
+    .hl-after { color: var(--success); font-weight: 700; }
+    .case-txt { font-size: 13px; color: var(--muted); margin: 0; line-height: 1.5; }
+    .case-gap { margin-top: 14px; }
+  </style>  
+</head>  
+<body>  
+  <main class="container">  
+    <section class="hero">  
+      <div>  
+        <div class="eyebrow">For creators using • Skool • Whop • Gumroad • Cosmofeed • Calendly • etc.</div>  
+        <h2>High-conversion landing pages built for you</h2>  
+       <p class="lead">  
+If you're sending people straight to your <b>selling platforms</b>, you're already  
+<b>losing sales</b>. Those pages don’t warm anyone up — no story, no value, no trust —  
+so people scroll, hesitate, and bounce.    
+<br><br>  
+A landing page placed <b>right before</b> your checkout changes everything. It builds  
+context, shows proof, answers objections, and makes your offer feel real — which  
+dramatically increases the chances they actually buy.    
+<br><br>  
+I build clean, branded landing pages that warm visitors up, explain <b>your offer  
+fast</b>, and get more of them to <b>buy</b> — without you changing anything in your  
+<b>current setup</b>.  
+</p> <br>  
+        <div class="features">  
+         <b> <div class="feature">High-trust sections (proof, clarity, offer breakdown)</div><br>  
+          <div class="feature">Design that converts</div><br>  
+          <div class="feature">Pre-sell, not pray</div> <br>  
+          <div class="feature">Traffic --> Buyers</div>  
+        </div></b>  <div style="margin-top:20px" class="cta-row">  
+      <a class="btn" href="mailto:ayushthakurmain@gmail.com?subject=Free Funnel Audit Request&body=Hey Ayush, I’d like a free funnel audit for my page:">Get Your Landing Page</a>  
+      <a href="#cases" class="btn ghost">View work</a>  
+    </div>  
 
-      <div class="case-grid">
-          <a href="https://igclients.com/creator" class="case" target="_blank">
-  <h4>IG Clients — Creator Monetization Funnel</h4>
-  <p class="muted">2× more sales | +170% time on page | Built in 5 days</p>
-  <p style="font-size:13px;color:var(--muted)">
-    Before: They were sending all traffic straight to their Gumroad checkout — zero warm-up, no story, no trust. As a result, a huge chunk of visitors bounced without buying. After getting a dedicated presell landing page from me, their conversions surged. With the *same traffic*, they started getting nearly double the sales, since the page finally explained the value, built credibility, and pre-sold the offer properly.
-  </p>
-</a>
- <a href="https://vawzenvip.com/vawzenvsl" class="case" target="_blank">
-  <h4>Vawzen — High-Ticket VSL Funnel</h4>
-  <p class="muted">4.7× more booked clients | +230% watch time | Built in 6 days</p>
-  <p style="font-size:13px;color:var(--muted)">
-    Before: Vawzen relied on a long bio link and scattered content that didn’t clearly explain the offer or qualify prospects. After building a focused VSL landing page with strong positioning, credibility elements, and a streamlined call-booking flow, their conversions surged — turning cold traffic into high-intent prospects consistently.
-  </p>
-</a>         
-<a href="https://igclients.com/shortform" class="case" target="_blank">
-  <h4>IG Clients — Shortform Editing & Content System</h4>
-  <p class="muted">3.1× more booked calls | +160% page retention | Built in 4 days</p>
-  <p style="font-size:13px;color:var(--muted)">
-    Before: They were sending creators straight to a call-booking calendar — no explanation, no breakdown of the offer, and no trust-building. Most visitors hesitated and bounced. After getting a warm, story-driven landing page from me, their traffic became way more qualified. With the *same audience*, they started booking over triple the calls because the page pre-sold the service, answered objections, and positioned the offer clearly before the calendar.
-  </p>
-</a>
-<a href="https://clickwisemedia.in/?fbclid=PAT01DUAOJcVVleHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaesJbk5wBujpBckl5Yd1-BWGkvvHVOE1yOp0c9nVQqkGeyRTsjZK0iKPR1bTQ_aem_lyWXBOvjDGxmKHrXQtHewg" class="case" target="_blank">
-  <h4>ClickWise Media — Digital Service Funnel</h4>
-  <p class="muted">3.8× more qualified leads | +200% page retention | 7-day delivery</p>
-  <p style="font-size:13px;color:var(--muted)">
-    Before: They were sending prospects straight to a call-booking calendar with zero context or trust — most visitors hesitated and bounced.  
-    After: I built a clear, story-driven landing page that explained their services, showcased credibility, and warmed up leads before the call. Immediately, more visitors stayed, understood the offer, and booked qualified calls almost 4× more consistently.
-  </p>
-</a>
- <a href="https://joinleadsconnect.com/" class="case" target="_blank">
-  <h4>Leads Connect — Social Media Engagement Agency</h4>
-  <p class="muted">6× more client inquiries | +210% time on page | 3.8× higher conversions</p>
-  <p style="font-size:13px;color:var(--muted)">
-  Before: Leads Connect used a basic static website that failed to convert. After the new landing page redesign, their traffic engagement spiked — turning casual visitors into consistent agency leads through clear copy, visuals, and social proof.
-  </p>
-</a>
-            <a href="https://rahtishcommunity.vercel.app/" class="case" target="_blank">
-          <h4>Rahtish — Community Launch Funnel</h4>
-          <p class="muted">+150% more sales | 2.4× longer stay time | 1-week delivery</p>
-          <p style="font-size:13px;color:var(--muted)">Before: Rahtish sold via Cosmofeed and DMs. After getting a landing page from me, his conversions jumped and visitors stayed longer — turning curiosity into real community sign-ups.</p>
-        </a>
+      
+  </section>
 
-       
-<a href="https://sendnow.pro" class="case" target="_blank">
-  <h4>SendNow — Pre-Sell Landing Page</h4>
-  <p class="muted">2.9× more sales | +240% time on page | Built in 5 days</p>
-  <p style="font-size:13px;color:var(--muted)">
-    Before: SendNow relied on a simple link-in-bio flow that pushed visitors straight to WhatsApp — no context, no proof, and no warm-up. Many prospects clicked but didn’t convert. After getting a dedicated pre-sell landing page from us, their visitors finally understood the value, stayed longer, and came into WhatsApp already pre-sold — resulting in nearly 3× more conversions with the same traffic.
-  </p>
-</a>
+   <section id="cases">         
+      <h1 style="text-align:center">Case Studies</h1>  
+      <p class="lead" style="text-align:center">Real examples from creators using Skool, Whop, Gumroad, Cosmofeed, Calendly and more.</p>  
+      <div class="case-grid">  
+      
+      <!-- Case 1 -->
+      <a href="https://igclients.com/creator" class="case" target="_blank">
+        <h4>IG Clients — Creator Monetization Funnel</h4>  
+        <p class="muted">2× more sales | +170% time on page | Built in 5 days</p>  
+        <p class="case-txt">
+          <span class="hl-before">Before:</span> They were sending all traffic straight to their Gumroad checkout — zero warm-up, no story, no trust. As a result, a huge chunk of visitors bounced without buying.
+        </p>
+        <p class="case-txt case-gap">
+          <span class="hl-after">After:</span> Getting a dedicated presell landing page from me, their conversions surged. With the *same traffic*, they started getting nearly double the sales, since the page finally explained the value, built credibility, and pre-sold the offer properly.
+        </p>  
+      </a>  
 
-<a href="https://www.jointhetribe.in/" class="case" target="_blank">
-  <h4>Join The Tribe — Men's Growth Community</h4>
-  <p class="muted">2.5× more members | +190% time on site | 10-day turnaround</p>
-  <p style="font-size:13px;color:var(--muted)">
-  Before: The Tribe was managing sign-ups manually through WhatsApp and links in bios — messy and hard to scale. After we built a focused landing page that clearly explained the mission, added proof, and streamlined the join flow, the community started growing faster and attracting the right kind of people who actually engage and stay.
-  </p>
-</a>
+      <!-- Case 2 -->
+      <a href="https://vawzenvip.com/vawzenvsl" class="case" target="_blank">  
+        <h4>Vawzen — High-Ticket VSL Funnel</h4>  
+        <p class="muted">4.7× more booked clients | +230% watch time | Built in 6 days</p>  
+        <p class="case-txt">
+          <span class="hl-before">Before:</span> Vawzen relied on a long bio link and scattered content that didn’t clearly explain the offer or qualify prospects.
+        </p>
+        <p class="case-txt case-gap">
+          <span class="hl-after">After:</span> Building a focused VSL landing page with strong positioning, credibility elements, and a streamlined call-booking flow, their conversions surged — turning cold traffic into high-intent prospects consistently.
+        </p>  
+      </a>           
 
-<a href="https://www.victoryempire.co" class="case" target="_blank">
-  <h4>Victory Empire — Content Creating Agency</h4>
-  <p class="muted">2.5× higher course sales | +125% page retention | Built in 7 days</p>
-  <p style="font-size:13px;color:var(--muted)">
-  Before: Victory Empire was sending all their traffic straight to a Calendly link with no context, no story, and no warm-up. Potential clients didn’t fully understand the value of their content system, leading to low call bookings and inconsistent interest.
+      <!-- Case 3 -->
+      <a href="https://igclients.com/shortform" class="case" target="_blank">  
+        <h4>IG Clients — Shortform Editing & Content System</h4>  
+        <p class="muted">3.1× more booked calls | +160% page retention | Built in 4 days</p>  
+        <p class="case-txt">
+          <span class="hl-before">Before:</span> They were sending creators straight to a call-booking calendar — no explanation, no breakdown of the offer, and no trust-building. Most visitors hesitated and bounced.
+        </p>
+        <p class="case-txt case-gap">
+          <span class="hl-after">After:</span> Getting a warm, story-driven landing page from me, their traffic became way more qualified. With the *same audience*, they started booking over triple the calls because the page pre-sold the service, answered objections, and positioned the offer clearly before the calendar.
+        </p>  
+      </a>  
 
-After: After getting a strategic pre-sell landing page from us, visitors were finally able to understand their process, see their proof, and feel the value before reaching the booking page — resulting in more qualified calls and more clients, all from the exact same traffic.
-  </p>
-</a>
+      <!-- Case 4 -->
+      <a href="https://clickwisemedia.in/?fbclid=PAT01DUAOJcVVleHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaesJbk5wBujpBckl5Yd1-BWGkvvHVOE1yOp0c9nVQqkGeyRTsjZK0iKPR1bTQ_aem_lyWXBOvjDGxmKHrXQtHewg" class="case" target="_blank">  
+        <h4>ClickWise Media — Digital Service Funnel</h4>  
+        <p class="muted">3.8× more qualified leads | +200% page retention | 7-day delivery</p>  
+        <p class="case-txt">
+          <span class="hl-before">Before:</span> They were sending prospects straight to a call-booking calendar with zero context or trust — most visitors hesitated and bounced.    
+        </p>
+        <p class="case-txt case-gap">
+          <span class="hl-after">After:</span> I built a clear, story-driven landing page that explained their services, showcased credibility, and warmed up leads before the call. Immediately, more visitors stayed, understood the offer, and booked qualified calls almost 4× more consistently.
+        </p>  
+      </a>  
 
-<a href="https://schoolofelites.com/" class="case" target="_blank">
-  <h4>School of Elites — High Performance Community</h4>
-  <p class="muted">+220% new sign-ups | 3× higher retention | Built in 8 days</p>
-  <p style="font-size:13px;color:var(--muted)">
-  Before: They were using Cosmofeed/Skool directly to collect members — it worked, but most visitors dropped off before joining. After we built a story-driven landing page with clear positioning, testimonials, and a single powerful CTA, conversions jumped and the community started attracting serious, high-intent members instead of casual clicks.
-  </p>
-</a>
-<a href="https://heightmax-blueprint-landing.vercel.app/" class="case" target="_blank">
-  <h4>Harsh Thakur — HeightMax Blueprint Course</h4>
-  <p class="muted">3.2× higher course sales | +180% page retention | Built in 3 days</p>
-  <p style="font-size:13px;color:var(--muted)">
-  Before: Harsh sold his course through on a website similar to cosmofeed & skool. Simple checkout page with little context or persuasion. After launching a full landing page that showcased transformations, testimonials, and value stacking, his conversions skyrocketed — turning browsers into paying students overnight.
-  </p>
-</a>
-      </div>
-    </section>
+      <!-- Case 5 -->
+      <a href="https://joinleadsconnect.com/" class="case" target="_blank">  
+        <h4>Leads Connect — Social Media Engagement Agency</h4>  
+        <p class="muted">6× more client inquiries | +210% time on page | 3.8× higher conversions</p>  
+        <p class="case-txt">
+          <span class="hl-before">Before:</span> Leads Connect used a basic static website that failed to convert.
+        </p>
+        <p class="case-txt case-gap">
+          <span class="hl-after">After:</span> The new landing page redesign, their traffic engagement spiked — turning casual visitors into consistent agency leads through clear copy, visuals, and social proof.
+        </p>  
+      </a>  
 
-    <section style="margin-top:28px">
-      <div class="panel">
-        <h3>How it works — 3 steps</h3>
-<div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
-  <div style="flex:1;min-width:180px">
-    <strong>1. Contact</strong>
-    <div class="muted">You reach out, we discuss what you need, and lock in the direction.</div>
-  </div>
-  <div style="flex:1;min-width:180px">
-    <strong>2. Build</strong>
-    <div class="muted">I design and build the full landing page. You get a live link to review and test.</div>
-  </div>
-  <div style="flex:1;min-width:180px">
-    <strong>3. Optimize</strong>
-    <div class="muted">You share feedback, I fine-tune everything — and your funnel is ready to go.</div>
-  </div>
-</div>
-          </div>
-        </div>
-      </div>
-    </section>
+      <!-- Case 6 -->
+      <a href="https://rahtishcommunity.vercel.app/" class="case" target="_blank">  
+        <h4>Rahtish — Community Launch Funnel</h4>  
+        <p class="muted">+150% more sales | 2.4× longer stay time | 1-week delivery</p>  
+        <p class="case-txt">
+          <span class="hl-before">Before:</span> Rahtish sold via Cosmofeed and DMs.
+        </p>
+        <p class="case-txt case-gap">
+          <span class="hl-after">After:</span> Getting a landing page from me, his conversions jumped and visitors stayed longer — turning curiosity into real community sign-ups.
+        </p>  
+      </a>  
 
-    <section style="margin-top:28px">
-      <div class="panel">
-        <h3>Ready to start?</h3>
-        <p class="muted">This can seriously increase your sales. Increase your revenue by clicking the button below.</p>
-        <div style="margin-top:12px">
-          <a class="btn" href="mailto:ayushthakurmain@gmail.com?subject=Free Funnel Audit&body=Hey Ayush, I want a landing page:">Contact Now</a>
-        </div>
-      </div>
-    </section>
-  </main>
+      <!-- Case 7 -->
+      <a href="https://sendnow.pro" class="case" target="_blank">  
+        <h4>SendNow — Pre-Sell Landing Page</h4>  
+        <p class="muted">2.9× more sales | +240% time on page | Built in 5 days</p>  
+        <p class="case-txt">
+          <span class="hl-before">Before:</span> SendNow relied on a simple link-in-bio flow that pushed visitors straight to WhatsApp — no context, no proof, and no warm-up. Many prospects clicked but didn’t convert.
+        </p>
+        <p class="case-txt case-gap">
+          <span class="hl-after">After:</span> Getting a dedicated pre-sell landing page from us, their visitors finally understood the value, stayed longer, and came into WhatsApp already pre-sold — resulting in nearly 3× more conversions with the same traffic.
+        </p>  
+      </a>  
 
-  <footer class="container">
-    <div style="display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap">
-      <div>
-        <strong>Rozokus</strong>
-        <div class="muted">Skool • Whop • Gumroad • Cosmofeed • etc.</div>
-      </div>
-      <div class="muted">© <span id="year"></span> Rozokus — Built for creators</div>
-    </div>
-  </footer>
+      <!-- Case 8 -->
+      <a href="https://www.jointhetribe.in/" class="case" target="_blank">  
+        <h4>Join The Tribe — Men's Growth Community</h4>  
+        <p class="muted">2.5× more members | +190% time on site | 10-day turnaround</p>  
+        <p class="case-txt">
+          <span class="hl-before">Before:</span> The Tribe was managing sign-ups manually through WhatsApp and links in bios — messy and hard to scale.
+        </p>
+        <p class="case-txt case-gap">
+          <span class="hl-after">After:</span> We built a focused landing page that clearly explained the mission, added proof, and streamlined the join flow, the community started growing faster and attracting the right kind of people who actually engage and stay.
+        </p>  
+      </a>  
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
+      <!-- Case 9 -->
+      <a href="https://www.victoryempire.co" class="case" target="_blank">  
+        <h4>Harsh Thakur — HeightMax Blueprint Course</h4>  
+        <p class="muted">3.2× higher course sales | +180% page retention | Built in 3 days</p>  
+        <p class="case-txt">
+          <span class="hl-before">Before:</span> Victory Empire was sending all their traffic straight to a Calendly link with no context, no story, and no warm-up. Potential clients didn’t fully understand the value of their content system, leading to low call bookings and inconsistent interest.
+        </p>
+        <p class="case-txt case-gap">
+          <span class="hl-after">After:</span> Getting a strategic pre-sell landing page from us, visitors were finally able to understand their process, see their proof, and feel the value before reaching the booking page — resulting in more qualified calls and more clients, all from the exact same traffic.
+        </p>  
+      </a>  
+
+      <!-- Case 10 -->
+      <a href="https://schoolofelites.com/" class="case" target="_blank">  
+        <h4>School of Elites — High Performance Community</h4>  
+        <p class="muted">+220% new sign-ups | 3× higher retention | Built in 8 days</p>  
+        <p class="case-txt">
+          <span class="hl-before">Before:</span> They were using Cosmofeed/Skool directly to collect members — it worked, but most visitors dropped off before joining.
+        </p>
+        <p class="case-txt case-gap">
+          <span class="hl-after">After:</span> We built a story-driven landing page with clear positioning, testimonials, and a single powerful CTA, conversions jumped and the community started attracting serious, high-intent members instead of casual clicks.
+        </p>  
+      </a>  
+
+      <!-- Case 11 -->
+      <a href="https://heightmax-blueprint-landing.vercel.app/" class="case" target="_blank">  
+        <h4>Harsh Thakur — HeightMax Blueprint Course</h4>  
+        <p class="muted">3.2× higher course sales | +180% page retention | Built in 3 days</p>  
+        <p class="case-txt">
+          <span class="hl-before">Before:</span> Harsh sold his course through on a website similar to cosmofeed & skool. Simple checkout page with little context or persuasion.
+        </p>
+        <p class="case-txt case-gap">
+          <span class="hl-after">After:</span> Launching a full landing page that showcased transformations, testimonials, and value stacking, his conversions skyrocketed — turning browsers into paying students overnight.
+        </p>  
+      </a>  
+
+    </div>  
+  </section>  
+
+  <section style="margin-top:28px">  
+    <div class="panel">  
+      <h3>How it works — 3 steps</h3>
+      <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">  
+        <div style="flex:1;min-width:180px">  
+          <strong>1. Contact</strong>  
+          <div class="muted">You reach out, we discuss what you need, and lock in the direction.</div>  
+        </div>  
+        <div style="flex:1;min-width:180px">  
+          <strong>2. Build</strong>  
+          <div class="muted">I design and build the full landing page. You get a live link to review and test.</div>  
+        </div>  
+        <div style="flex:1;min-width:180px">  
+          <strong>3. Optimize</strong>  
+          <div class="muted">You share feedback, I fine-tune everything — and your funnel is ready to go.</div>  
+        </div>  
+      </div>  
+    </div>  
+  </section>  
+
+  <section style="margin-top:28px">  
+    <div class="panel">  
+      <h3>Ready to start?</h3>  
+      <p class="muted">This can seriously increase your sales. Increase your revenue by clicking the button below.</p>  
+      <div style="margin-top:12px">  
+        <a class="btn" href="mailto:ayushthakurmain@gmail.com?subject=Free Funnel Audit&body=Hey Ayush, I want a landing page:">Contact Now</a>  
+      </div>  
+    </div>  
+  </section>
+
+  </main>    
+
+  <footer class="container">  
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap">  
+      <div>  
+        <strong>Rozokus</strong>  
+        <div class="muted">Skool • Whop • Gumroad • Cosmofeed • etc.</div>  
+      </div>  
+      <div class="muted">© <span id="year"></span> Rozokus — Built for creators</div>  
+    </div>  
+  </footer>    
+  
+  <script>  
+    document.getElementById('year').textContent = new Date().getFullYear();  
+  </script>  
+</body>  
 </html>
+
